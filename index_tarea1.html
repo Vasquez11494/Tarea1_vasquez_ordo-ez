@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // STRING
+        console.log('Metodos para STRING')
+
+        const string = 'Este es un string'
+
+        let string1 = string.toUpperCase()
+        let string2 = string.charAt(2)
+        let string3 = string.slice(5, 10)
+        console.log('1. CONVIERTE A MAYUSCULA   "' + string1 + '"')
+        console.log('2. DEVUELVE EL CARACTER EN EL INDICE INDICADO  "' + string2 + '"')
+        console.log('3. DEVUELVE EL STRING EN EL PARAMETRO  "' + string3 + '"')
+        console.log('')
+        // NUMBER
+        console.log('Metodos para numbers')
+        const numero = 12345678910.997878
+        let numero1 = Number.isInteger(numero)
+        console.log(`1. Determina si es entero "${numero1}"`)
+
+        let numeroFloat = Number.isNaN(numero);
+        console.log(`2. Determina si numero es NaN: ${numeroFloat}`);
+
+        let numeroConDecimales = numero.toFixed(2);
+        console.log(`3. Número con 2 decimales: ${numeroConDecimales}`);
+        console.log('')
+
+
+        //BOOLEANO
+
+        console.log('Metodos para Booleanos')
+
+        let valor = 1;
+        let esVerdadero = Boolean(valor);
+        console.log(`1. Convertir a booleano: ${esVerdadero}`);
+
+        let bool = true;
+        let boolStr = bool.toString();
+        console.log(`2. Convertir booleano a cadena: ${boolStr}`);
+
+        let boolValue = new Boolean(false);
+        let valorPrimitivo = boolValue.valueOf();
+        console.log(`3. Valor primitivo del booleano: ${valorPrimitivo}`);
+        console.log('')
+
+        // OBJECT
+
+        console.log("Metodo para Objetos")
+        let objeto = { a: 1, b: 2, c: 3 };
+        let claves = Object.keys(objeto);
+        console.log(`1. Devuelve las claves del objeto: ${claves}`);
+
+        let valores = Object.values(objeto);
+        console.log(`2. Devuelve los valores del objeto: ${valores}`);
+
+        let entradas = Object.entries(objeto);
+        console.log(`3. Devuelve un Array de Arrays: ${JSON.stringify(entradas)}`);
+        console.log('')
+
+
+        // ARRAYS
+        console.log("Metodo para Arrays")
+
+        let array = [1, 2, 3];
+        array.push(4);
+        console.log(`1. Añadir elemento al array: ${array}`);
+
+        let ultimo = array.pop();
+        console.log(`2. Quitar último elemento del array: ${ultimo}`);
+        console.log(`Array después de quitar el último elemento: ${array}`);
+
+        let valor1 = array.values();
+        console.log('3. Itera los valores del Array')
+        for (let value of valor1) {
+            console.log(value)
+        }
+
+
+    </script>
+</body>
+
+</html>
